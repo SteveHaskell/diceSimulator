@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">diceSimulator</string>
+    <string name="d4_res_tag">D4 Roll: </string>
+    <string name ="d4_roll_tag">Roll D4 </string>
+    <string name ="generic_res">Roll a Dice!</string>
+
+</resources>
