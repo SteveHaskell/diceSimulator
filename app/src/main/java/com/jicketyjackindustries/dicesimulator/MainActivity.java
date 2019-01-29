@@ -24,33 +24,54 @@ public class MainActivity extends AppCompatActivity {
         t.setText(typeOfDice + " :  "+ s);
     }
 
+    public void onRoll(int typeOfDice){
+        String diceName;
+        if(typeOfDice==4){
+            diceName = "D4";
+        }
+        else if(typeOfDice==6){
+            diceName = "D6";
+        }
+        else if(typeOfDice==8){
+            diceName = "D8";
+        }
+        else if(typeOfDice==10){
+            diceName = "D10";
+        }
+        else if(typeOfDice==12){
+            diceName = "D12";
+        }
+        else if(typeOfDice==20){
+            diceName = "D20";
+        }
+        else {
+            diceName = "N/A";
+        }
+        int res = getRandomBetween(1,typeOfDice);
+
+        setResultField(res,diceName);
+    }
     public void onD4Roll(View v){
-        int res = getRandomBetween(1,4);
-        setResultField(res,"D4");
+        onRoll(4);
     }
 
     public void onD6Roll(View v){
-        int res = getRandomBetween(1,6);
-        setResultField(res,"D6");
+        onRoll(6);
     }
 
     public void onD8Roll(View v){
-        int res = getRandomBetween(1,8);
-        setResultField(res,"D8");
+        onRoll(8);
     }
     public void onD10Roll(View v){
-        int res = getRandomBetween(1,10);
-        setResultField(res,"D10");
+        onRoll(10);
     }
 
     public void onD12Roll(View v){
-        int res = getRandomBetween(1,12);
-        setResultField(res,"D12");
+        onRoll(12);
     }
 
     public void onD20Roll(View v){
-        int res = getRandomBetween(1,20);
-        setResultField(res,"D20");
+        onRoll(20);
     }
 
     public int getRandomBetween(int minOffset, int max){
