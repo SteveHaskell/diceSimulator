@@ -103,26 +103,10 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.669" />
 
-    <Button
-        android:id="@+id/button8"
-        android:layout_width="317dp"
-        android:layout_height="123dp"
-        android:layout_marginBottom="8dp"
-        android:background="@android:color/transparent"
-        android:onClick="clearResField"
-        android:text=""
-        android:textColor="@android:color/white"
-        android:textSize="20dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/textViewResField"
-        app:layout_constraintVertical_bias="0.916" />
-
     <TextView
         android:id="@+id/textViewResField"
         style="@style/Widget.AppCompat.AutoCompleteTextView"
-        android:layout_width="314dp"
+        android:layout_width="360dp"
         android:layout_height="49dp"
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
@@ -141,26 +125,22 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.878" />
 
-    <TextView
-        android:id="@+id/textViewResTallyField"
-        style="@style/Widget.AppCompat.AutoCompleteTextView"
-        android:layout_width="316dp"
-        android:layout_height="53dp"
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="337dp"
+        android:layout_height="66dp"
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
         android:layout_marginEnd="8dp"
         android:layout_marginBottom="8dp"
-        android:background="@null"
-        android:ems="10"
-        android:gravity="center"
-        android:textSize="32dp"
-        android:visibility="visible"
+        android:background="@android:color/transparent"
+        android:onClick="clearLists"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.502"
+        app:layout_constraintHorizontal_bias="0.509"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.983" />
+        app:layout_constraintTop_toTopOf="@+id/textViewResField"
+        app:layout_constraintVertical_bias="0.0" />
 
 
 </android.support.constraint.ConstraintLayout>
